@@ -44,19 +44,19 @@
         background-color: #283618 !important;
       }
       #typedtext {
-        font-size: 35px;
+        font-size: 30px;
         margin-top: 20vh;
         text-align: center;
-        margin-left: 25vw;
-        width: 40vw;
       }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="row">
-        <div id="typedtext"></div>
-        <div class="container" style="margin-top: 10vh">
+        <div class="col"></div>
+        <div class="col" id="typedtext">Membaca kedua informasi tadi terkait vaksin Covid-19 yang mengandung chip, apakah kamu percaya? Atau justru tidak peduli?</div>
+        <div class="col"></div>
+        <div class="container" style="margin-top: 5vh">
           <div class="row">
             <div class="col">
                 <div class="row" style="margin-right: 25vw; margin-left: 25vw">
@@ -82,39 +82,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script>
-      var aText = new Array("Membaca kedua informasi tadi terkait vaksin Covid-19 yang mengandung chip, apakah kamu percaya? Atau justru tidak peduli?");
-      var iSpeed = 40; // time delay of print out
-      var iIndex = 0; // start printing array at this posision
-      var iArrLength = aText[0].length; // the length of the text array
-      var iScrollAt = 20; // start scrolling up at this many lines
-
-      var iTextPos = 0; // initialise text position
-      var sContents = ""; // initialise contents variable
-      var iRow; // initialise current row
-
-      function typewriter() {
-        sContents = " ";
-        iRow = Math.max(0, iIndex - iScrollAt);
-        var destination = document.getElementById("typedtext");
-
-        while (iRow < iIndex) {
-          sContents += aText[iRow++] + "<br />";
-        }
-        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos) + "_";
-        if (iTextPos++ == iArrLength) {
-          iTextPos = 0;
-          iIndex++;
-          if (iIndex != aText.length) {
-            iArrLength = aText[iIndex].length;
-            setTimeout("typewriter()", 1000);
-          }
-        } else {
-          setTimeout("typewriter()", iSpeed);
-        }
-      }
-
-      typewriter();
-    </script>
+    
   </body>
 </html>
