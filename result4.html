@@ -1,26 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+
+    <title>Hello, world!</title>
     <style>
       body {
-        background: url("./asset/Untitled\ design\ copy.png") no-repeat center center fixed;
+        background: url("./asset/drive-download-20220604T082925Z-001/SKOR\ 4.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
-      }
-      .btn-warning,
-      .btn-warning:hover,
-      .btn-warning:active,
-      .btn-warning:visited,
-      .btn-outline-warning {
-        background-color: #bd6d2a !important;
-        border-color: #bd6d2a !important;
       }
 
       .btn-primary,
@@ -32,24 +27,32 @@
         border-color: #606c38 !important;
       }
 
-      .tombolM {
-        transform: rotate(-5deg);
+      .btn-dark,
+      .btn-dark:hover,
+      .btn-dark:active,
+      .btn-dark:visited {
+        background-color: #283618 !important;
+      }
+      .btnmanual {
+        background-color: #4caf50;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+      }
+      #typedtext {
+        font-size: 40px;
+        margin-top: 18vh;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <div class="container tombolM" style="margin-top: 59vh">
-      <div class="row">
-        <div class="col">
-          <div class="row" style="margin-right: 18vw; margin-left: 52vw">
-            <button type="button" class="btn btn-warning text-light" onclick="location.href='./quiz1-12.html'">Memang ada apa saja?</button>
-          </div>
-          <div class="row mt-3" style="margin-right: 18vw; margin-left: 52vw">
-            <button type="button" class="btn btn-primary" onclick="location.href='./quiz2-1.html'">Lanjut permainan dulu, deh</button>
-          </div>
-        </div>
-      </div>
-    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
@@ -57,5 +60,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script>
+      $("html").click(function () {
+        location.href = "./quiz1-2.html";
+      });
+    </script>
   </body>
 </html>
