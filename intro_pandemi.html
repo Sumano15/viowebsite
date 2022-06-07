@@ -10,7 +10,16 @@
 
     <title>Hello, world!</title>
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Avenir;
         background: url("./asset/backgroundquiz.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -23,6 +32,7 @@
       }
 
       .c-button {
+        font-family: Config;
         font-size: 20px;
         background: #fdfbe5;
         border-radius: 3em;

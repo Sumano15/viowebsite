@@ -13,6 +13,7 @@
         src: url(./asset/Playfair_Display/static/PlayfairDisplay-ExtraBold.ttf);
       }
       body {
+        font-family: PlayFairDisplay;
         background: url("asset/background-01.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -29,7 +30,7 @@
         top: 4vh;
       }
 
-      .wave-wrap .petualang{
+      .wave-wrap .petualang {
         width: auto;
       }
 
@@ -105,7 +106,7 @@
         }
       }
 
-      .linebawah{
+      .linebawah {
         right: 20vw;
       }
 
@@ -132,11 +133,11 @@
       }
 
       @media only screen and (max-width: 1150px) {
-        p.wave{
+        p.wave {
           font-size: 50px;
         }
-        .linebawah{
-          margin-left: 0vw
+        .linebawah {
+          margin-left: 0vw;
         }
       }
 
@@ -168,49 +169,97 @@
         box-shadow: 0 0 0 3px rgba(182, 0, 0, 0.45), 0 0 #ffe9e9;
         transform: translate3d(0, 0, -1em);
       }
-      *{
+      * {
         margin: 0;
       }
 
-      .wrap-back img{
+      .wrap-back img {
         width: 100%;
         height: 100vh;
+      }
+      .petualanghp {
+        color: #fcf9e3;
+        /* margin-top: 1rem; */
+        position: fixed;
+        text-align: center;
+        top: 5vh;
+        right: 10vw;
+      }
+      p.wave1 {
+        font-size: 30px;
+        font-weight: bold;
+        font-family: "PlayFairDisplay";
+        text-align: center;
+        color: #fcf9e3;
+        text-shadow: 5px 5px 0 #ce7329;
+        display: inline-block;
       }
     </style>
   </head>
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 col-md-12 col-xl-12 p-0">
+        <div class="col-xl-12 p-0 d-none d-lg-block d-xl-block">
           <div class="wrap-back">
-            <img src="./asset/cover asset 1920-01.png" alt="">
+            <img src="./asset/cover asset 1920-01.png" alt="" />
           </div>
         </div>
-          <div class="wave-wrap">
-            <div class="petualang">
-              <p class="p wave">P</p>
-              <p class="e wave">e</p>
-              <p class="t wave">t</p>
-              <p class="u wave">u</p>
-              <p class="a wave">a</p>
-              <p class="l wave">l</p>
-              <p class="a1 wave">a</p>
-              <p class="n wave">n</p>
-              <p class="g wave">g</p>
-              <p class="a2 wave">a</p>
-              <p class="n1 wave">n</p>
-              <p class="l1 wave">&nbsp; L</p>
-              <p class="i wave">i</p>
-              <p class="g1 wave">g</p>
-              <p class="i1 wave">i</p>
-            </div>
-            <div>
-              <img src="./asset/line bawah judul.png" class="linebawah" alt="" />
-            </div>
-              <button class="c-button" id="myBtn" onclick="location.href='./prolog1.html'">Mulai!</button>
+        <div class="col-xl-12 p-0 .d-block .d-lg-none .d-xl-none">
+          <div class="wrap-back">
+            <img src="./asset/cover asset.png" alt="" />
           </div>
-          
-        
+        </div>
+        <div class="wave-wrap d-none d-lg-block d-xl-block">
+          <div class="petualang">
+            <p class="p wave">P</p>
+            <p class="e wave">e</p>
+            <p class="t wave">t</p>
+            <p class="u wave">u</p>
+            <p class="a wave">a</p>
+            <p class="l wave">l</p>
+            <p class="a1 wave">a</p>
+            <p class="n wave">n</p>
+            <p class="g wave">g</p>
+            <p class="a2 wave">a</p>
+            <p class="n1 wave">n</p>
+            <p class="l1 wave">&nbsp; L</p>
+            <p class="i wave">i</p>
+            <p class="g1 wave">g</p>
+            <p class="i1 wave">i</p>
+          </div>
+          <div>
+            <img src="./asset/line bawah judul.png" class="linebawah" alt="" />
+          </div>
+          <button class="c-button" id="myBtn" onclick="location.href='./prolog1.html'">Mulai</button>
+          <br />
+          <button class="c-button mt-5" id="myBtn" onclick="location.href='./credits.html'">Credits</button>
+        </div>
+        <div class="wave-wrap d-block d-md-none d-lg-none d-xl-none">
+          <div class="petualanghp">
+            <p class="p wave1">P</p>
+            <p class="e wave1">e</p>
+            <p class="t wave1">t</p>
+            <p class="u wave1">u</p>
+            <p class="a wave1">a</p>
+            <p class="l wave1">l</p>
+            <p class="a1 wave1">a</p>
+            <p class="n wave1">n</p>
+            <p class="g wave1">g</p>
+            <p class="a2 wave1">a</p>
+            <p class="n1 wave1">n</p>
+            <p class="l1 wave1">&nbsp; L</p>
+            <p class="i wave1">i</p>
+            <p class="g1 wave1">g</p>
+            <p class="i1 wave1">i</p>
+          </div>
+          <div>
+            <img src="./asset/line bawah judul.png" style="margin-left: -40vw" width="50%" class="linebawah" alt="" />
+          </div>
+          <button class="c-button" id="myBtn" style="margin-left: -40vw" onclick="location.href='./prolog1.html'">Mulai</button>
+          <br />
+          <button class="c-button mt-5" id="myBtn" style="margin-left: -40vw" onclick="location.href='./credits.html'">Credits</button>
+        </div>
+      </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   </body>

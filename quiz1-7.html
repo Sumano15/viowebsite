@@ -10,7 +10,16 @@
 
     <title>Hello, world!</title>
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Avenir;
         background: url("./asset/backgroundquiz1.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -24,8 +33,9 @@
       .btn-warning:active,
       .btn-warning:visited,
       .btn-outline-warning {
-        background-color: #BD6D2A !important;
-        border-color: #BD6D2A !important;
+        font-family: Config;
+        background-color: #bc6c25 !important;
+        border-color: #bc6c25 !important;
       }
 
       .btn-primary,
@@ -33,15 +43,17 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
-        background-color: #606c38 !important;
-        border-color: #606c38 !important;
+        font-family: Config;
+        background-color: #934B21 !important;
+        border-color: #934B21 !important;
       }
 
       .btn-dark,
       .btn-dark:hover,
       .btn-dark:active,
       .btn-dark:visited {
-        background-color: #283618 !important;
+        font-family: Config;
+        background-color: #833324 !important;
       }
       #typedtext {
         font-size: 30px;

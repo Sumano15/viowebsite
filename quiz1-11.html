@@ -7,7 +7,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Config;
         background: url("./asset/Untitled\ design\ copy.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -28,8 +37,8 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
-        background-color: #606c38 !important;
-        border-color: #606c38 !important;
+        background-color: #934b21 !important;
+        border-color: #934b21 !important;
       }
 
       .tombolM {
@@ -42,7 +51,7 @@
       <div class="row">
         <div class="col">
           <div class="row" style="margin-right: 18vw; margin-left: 52vw">
-            <button type="button" class="btn btn-warning text-light" onclick="location.href='./quiz1-12.html'">Memang ada apa saja?</button>
+            <button type="button" class="btn btn-warning text-light" onclick="location.href='./infografis.html'">Memang ada apa saja?</button>
           </div>
           <div class="row mt-3" style="margin-right: 18vw; margin-left: 52vw">
             <button type="button" class="btn btn-primary" onclick="location.href='./quiz2-1.html'">Lanjut permainan dulu, deh</button>

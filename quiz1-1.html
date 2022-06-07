@@ -10,6 +10,10 @@
 
     <title>Hello, world!</title>
     <style>
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
         background: url("./asset/1\ \(2\).png") no-repeat center center fixed;
         -webkit-background-size: cover;
@@ -23,6 +27,7 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
+        font-family: Config;
         background-color: #606c38 !important;
         border-color: #606c38 !important;
       }
@@ -31,9 +36,11 @@
       .btn-dark:hover,
       .btn-dark:active,
       .btn-dark:visited {
+        font-family: Config;
         background-color: #283618 !important;
       }
       .btnmanual {
+        font-family: Config;
         background-color: #4caf50;
         border: none;
         color: white;

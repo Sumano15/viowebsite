@@ -10,7 +10,16 @@
 
     <title>Hello, world!</title>
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Avenir;
         background: url("./asset/kosongan.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -23,8 +32,19 @@
       .btn-warning:active,
       .btn-warning:visited,
       .btn-outline-warning {
+        font-family: Config;
         background-color: #bd6d2a !important;
         border-color: #bd6d2a !important;
+      }
+
+      .btn-success,
+      .btn-success:hover,
+      .btn-success:active,
+      .btn-success:visited,
+      .btn-outline-success {
+        font-family: Config;
+        background-color: #833324 !important;
+        border-color: #833324 !important;
       }
 
       .btn-primary,
@@ -32,15 +52,17 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
-        background-color: #606c38 !important;
-        border-color: #606c38 !important;
+        font-family: Config;
+        background-color: #934b21 !important;
+        border-color: #934b21 !important;
       }
 
       .btn-dark,
       .btn-dark:hover,
       .btn-dark:active,
       .btn-dark:visited {
-        background-color: #283618 !important;
+        font-family: Config;
+        background-color: #542120 !important;
       }
       #typedtext {
         font-size: 30px;
@@ -68,7 +90,7 @@
             </div>
             <div class="col">
               <div class="row" style="margin-left: 1vw">
-                <button type="button" class="btn btn-primary" onclick="location.href='./quiz1-10.html'">Tidak percaya.</button>
+                <button type="button" class="btn btn-success" onclick="location.href='./quiz1-10.html'">Tidak percaya.</button>
               </div>
               <br />
               <div class="row" style="margin-left: 1vw">

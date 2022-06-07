@@ -7,7 +7,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Avenir;
         background: url("./asset/akjasjknadskldas.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -19,8 +28,10 @@
       .btn-warning:active,
       .btn-warning:visited,
       .btn-outline-warning {
-        background-color: #bd6d2a !important;
-        border-color: #bd6d2a !important;
+        color: #fff;
+        font-family: Config;
+        background-color: #9e9071 !important;
+        border-color: #9e9071 !important;
       }
 
       .btn-primary,
@@ -28,9 +39,21 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
-        background-color: #606c38 !important;
-        border-color: #606c38 !important;
+        font-family: Config;
+        background-color: #606d39 !important;
+        border-color: #606d39 !important;
       }
+
+      .btn-success,
+      .btn-success:hover,
+      .btn-success:active,
+      .btn-success:visited,
+      .btn-outline-success {
+        font-family: Config;
+        background-color: #934b21 !important;
+        border-color: #934b21 !important;
+      }
+
       .scroll-container,
       .scroll-area {
         max-width: 100vw;
@@ -76,7 +99,7 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">1</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Ketika menemukan informasi yang belum pasti kebenarannya, apa yang seharusnya dilakukan?</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Ketika menemukan informasi yang belum pasti kebenarannya, apa yang seharusnya dilakukan?</div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn1" href="#2" role="button">Langsung Menyebarkan Informasi Tersebut</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn2" href="#2" role="button">Mencari informasi tersebut menggunakan kata kunci yang sesuai </a></div>
                 </div>
@@ -94,7 +117,9 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">2</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Mana yang merupakan salah satu hal yang bisa dilakukan dalam pengecekan fakta mandiri pada konten hoaks berbentuk teks?</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">
+                    Mana yang merupakan salah satu hal yang bisa dilakukan dalam pengecekan fakta mandiri pada konten hoaks berbentuk teks?
+                  </div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn3" href="#3" role="button">Mencari di mesin pencarian Google menggunakan kata kunci yang sesuai</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn4" href="#3" role="button">Mencari di situs Yandex terkait informasi serupa</a></div>
                 </div>
@@ -111,10 +136,10 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">3</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Ketika kamu ingin melakukan pengecekan fakta pada gambar atau video yang kamu temukan, tools apa yang bisa digunakan?</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Ketika kamu ingin melakukan pengecekan fakta pada gambar atau video yang kamu temukan, tools apa yang bisa digunakan?</div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn5" href="#4" role="button">Yandax dan Google Reverse Image</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn6" href="#4" role="button">Yandex dan Factcheck.org </a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn7" href="#4" role="button">Google Reverse Image dan Factcheck.org</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn7" href="#4" role="button">Google Reverse Image dan Factcheck.org</a></div>
                 </div>
               </div>
             </div>
@@ -130,12 +155,12 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">4</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Manakah yang merupakan langkah-langkah verifikasi gambar melalui tool Google Search Image?</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Manakah yang merupakan langkah-langkah verifikasi gambar melalui tool Google Search Image?</div>
                   <div class="row mt-3 justify-content-center">
-                    <a class="btn btn-warning btn-sm" href="#" role="button">Simpan atau screenshot gambar yang ingin diverifikasi. Lalu, pada situs Google Search Image, unggah gambar tadi.</a>
+                    <a class="btn btn-warning btn-sm" id="quizbtn27" href="#5" role="button">Simpan atau screenshot gambar yang ingin diverifikasi. Lalu, pada situs Google Search Image, unggah gambar tadi.</a>
                   </div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn8" href="#5" role="button">Ketik ciri-ciri gambar pada mesin pencarian Google. Kemudian, klik pada bagian "Gambar".</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn9" href="#5" role="button">Buka situs Google Search Image dan simpan gambar yang ingin diverifikasi.</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn9" href="#5" role="button">Buka situs Google Search Image dan simpan gambar yang ingin diverifikasi.</a></div>
                 </div>
               </div>
             </div>
@@ -153,16 +178,19 @@
                 <div class="card-body">
                   <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">
                     Di bawah ini, merupakan beberapa ciri hoaks, kecuali... <br />
-                    A. Menimbulkan rasa cemas dan emosi <br />
-                    B. Sumber tidak jelas <br />
-                    C. Mencatut nama tokoh publik atau media ternama <br />
-                    D. Berisi informasi yang padat, singkat, dan jelas <br />
-                    E. Judul bernada provokatif <br />
-                    F. Meminta untuk disebarkan<br />
+                    <br />
+                    <div style="text-align: left">
+                      A. Menimbulkan rasa cemas dan emosi <br />
+                      B. Sumber tidak jelas <br />
+                      C. Mencatut nama tokoh publik atau media ternama <br />
+                      D. Berisi informasi yang padat, singkat, dan jelas <br />
+                      E. Judul bernada provokatif <br />
+                      F. Meminta untuk disebarkan<br />
+                    </div>
                   </div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn10" href="#6" role="button">A. Menimbulkan rasa cemas dan emosi</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn11" href="#6" role="button">D. Berisi informasi yang padat, singkat, dan jelas</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn12" href="#6" role="button">F. Meminta untuk disebarkan</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn12" href="#6" role="button">F. Meminta untuk disebarkan</a></div>
                 </div>
               </div>
             </div>
@@ -180,20 +208,23 @@
                 <div class="card-body">
                   <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">
                     Hoaks memiliki 7 jenis, di antara jenis-jenis di bawah ini, manakah yang bukan termasuk jenis-jenis hoaks? <br />
-                    F. Satire/parodi <br />
-                    G. Konten palsu <br />
-                    H. Konten tiruan <br />
-                    I. Konten malinformasi <br />
-                    J. Koneksi yang salah <br />
-                    A. Konten yang menyesatkan <br />
-                    B. Konten misinformasi <br />
-                    C. Konteks yang salah <br />
-                    D. Konten yang dimanipulasi <br />
-                    E. Konten disintormasi<br />
+                    <br />
+                    <div style="text-align: left">
+                      A. Konten yang menyesatkan <br />
+                      B. Konten misinformasi <br />
+                      C. Konteks yang salah <br />
+                      D. Konten yang dimanipulasi <br />
+                      E. Konten disintormasi<br />
+                      F. Satire/parodi <br />
+                      G. Konten palsu <br />
+                      H. Konten tiruan <br />
+                      I. Konten malinformasi <br />
+                      J. Koneksi yang salah <br />
+                    </div>
                   </div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn13" href="#7" role="button">A, C, dan D</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn14" href="#7" role="button">C, F, dan J</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn15" href="#7" role="button">B, E, dan I</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn15" href="#7" role="button">B, E, dan I</a></div>
                 </div>
               </div>
             </div>
@@ -209,10 +240,10 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">7</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Jenis hoaks yang disebarkan tanpa ada niat jahat, tetapi dapat mengelabui merupakan jenis hoaks...</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Jenis hoaks yang disebarkan tanpa ada niat jahat, tetapi dapat mengelabui merupakan jenis hoaks...</div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn16" href="#8" role="button">Konten yang menyesatkan</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn17" href="#8" role="button">Konteks yang salah</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn18" href="#8" role="button">Satire/parodi</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn18" href="#8" role="button">Satire/parodi</a></div>
                 </div>
               </div>
             </div>
@@ -227,10 +258,10 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 2em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">8</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Jenis hoaks yang murni dibuat untuk mengelabui dan merugikan penerimanya merupakan jenis hoaks...</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Jenis hoaks yang murni dibuat untuk mengelabui dan merugikan penerimanya merupakan jenis hoaks...</div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn19" href="#9" role="button">Satire/parodi</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn20" href="#9" role="button">Konten palsu</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn21" href="#9" role="button">Konteks yang salah</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn21" href="#9" role="button">Konteks yang salah</a></div>
                 </div>
               </div>
             </div>
@@ -253,7 +284,7 @@
                   <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Menurutmu, termasuk jenis apakah hoaks di atas?</div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn22" href="#10" role="button">Konten yang dimanipu lasi</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn23" href="#10" role="button">Konteks yang salah</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn24" href="#10" role="button">Konten menyesatkan</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn24" href="#10" role="button">Konten menyesatkan</a></div>
                 </div>
               </div>
             </div>
@@ -269,11 +300,11 @@
               <div class="card">
                 <h5 class="card-title" style="border-radius: 35px; width: 3em; height: 2em; background-color: #908368; text-align: center; justify-content: center; padding: 0.5em">10</h5>
                 <div class="card-body">
-                  <div class="row justify-content-center" style="text-align: center; color: black">Termasuk jenis hoaks apakah klaim di bawah ini?</div>
+                  <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Termasuk jenis hoaks apakah klaim di bawah ini?</div>
                   <img src="./asset/Screen Shot 2022-06-03 at 21.31.32.png" alt="" />
                   <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn25" href="#" role="button">Konten yang dimanipulasi</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn26" href="#" role="button">Koneksi yang salah</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn27" href="#" role="button">Konten palsu</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn27" href="#" role="button">Konten palsu</a></div>
                 </div>
               </div>
             </div>
@@ -291,6 +322,7 @@
       referrerpolicy="no-referrer"
     ></script>
     <script>
+      //no1
       var poin = 0;
       $("#quizbtn1").click(function () {
         $("#quizbtn1").attr("pointer-events", "none");
@@ -299,6 +331,8 @@
         poin++;
         $("#quizbtn2").css("pointer-events", "none");
       });
+
+      //no2
       $("#quizbtn3").click(function () {
         poin++;
         $("#quizbtn3").css("pointer-events", "none");
@@ -306,6 +340,8 @@
       $("#quizbtn4").click(function () {
         $("#quizbtn4").attr("pointer-events", "none");
       });
+
+      //no3
       $("#quizbtn5").click(function () {
         poin++;
         $("#quizbtn5").css("pointer-events", "none");
@@ -316,9 +352,14 @@
       $("#quizbtn7").click(function () {
         $("#quizbtn7").attr("pointer-events", "none");
       });
-      $("#quizbtn8").click(function () {
+
+      //no4
+      $("#quizbtn27").click(function () {
         poin++;
-        $("#quizbtn8").css("pointer-events", "none");
+        $("#quizbtn27").css("pointer-events", "none");
+      });
+      $("#quizbtn8").click(function () {
+        $("#quizbtn8").attr("pointer-events", "none");
       });
       $("#quizbtn9").click(function () {
         $("#quizbtn9").attr("pointer-events", "none");
@@ -326,6 +367,8 @@
       $("#quizbtn10").click(function () {
         $("#quizbtn10").attr("pointer-events", "none");
       });
+
+      //no5
       $("#quizbtn11").click(function () {
         $("#quizbtn11").attr("pointer-events", "none");
       });
@@ -336,6 +379,8 @@
       $("#quizbtn13").click(function () {
         $("#quizbtn13").attr("pointer-events", "none");
       });
+
+      //no6
       $("#quizbtn14").click(function () {
         $("#quizbtn14").attr("pointer-events", "none");
       });
@@ -346,6 +391,8 @@
       $("#quizbtn16").click(function () {
         $("#quizbtn16").attr("pointer-events", "none");
       });
+
+      //no7
       $("#quizbtn17").click(function () {
         $("#quizbtn17").attr("pointer-events", "none");
       });
@@ -356,6 +403,8 @@
       $("#quizbtn19").click(function () {
         $("#quizbtn19").attr("pointer-events", "none");
       });
+
+      //no8
       $("#quizbtn20").click(function () {
         poin++;
         $("#quizbtn20").css("pointer-events", "none");
@@ -363,6 +412,7 @@
       $("#quizbtn21").click(function () {
         $("#quizbtn21").attr("pointer-events", "none");
       });
+
       $("#quizbtn22").click(function () {
         poin++;
         $("#quizbtn22").css("pointer-events", "none");

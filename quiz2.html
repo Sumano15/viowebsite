@@ -7,7 +7,16 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <style>
+      @font-face {
+        font-family: "Avenir";
+        src: url(./asset/AvenirLTStd-Book.otf);
+      }
+      @font-face {
+        font-family: "Config";
+        src: url(./asset/ConfigRounded-Black.otf);
+      }
       body {
+        font-family: Avenir;
         background: url("./asset/polosanquiz2.png") no-repeat center center fixed;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -19,6 +28,7 @@
       .btn-warning:active,
       .btn-warning:visited,
       .btn-outline-warning {
+        font-family: Config;
         background-color: #bd6d2a !important;
         border-color: #bd6d2a !important;
       }
@@ -28,8 +38,9 @@
       .btn-primary:active,
       .btn-primary:visited,
       .btn-outline-primary {
-        background-color: #606c38 !important;
-        border-color: #606c38 !important;
+        font-family: Config;
+        background-color: #833324 !important;
+        border-color: #833324 !important;
       }
       .scroll-container,
       .scroll-area {
@@ -80,7 +91,7 @@
             <img src="./asset/zxs.png" width="15%" alt="" />
           </div>
           <div class="row mt-1 justify-content-center">
-            <div class="btn btn-primary" style="width: 30vw">Lanjut</div>
+            <div class="btn btn-primary" style="width: 30vw" onclick="location.href='./quiz2-2.html'">Lanjut</div>
           </div>
         </div>
       </div>
