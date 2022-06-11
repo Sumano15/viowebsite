@@ -302,9 +302,9 @@
                 <div class="card-body">
                   <div class="row justify-content-center" style="text-align: center; color: black; font-size: 20px">Termasuk jenis hoaks apakah klaim di bawah ini?</div>
                   <img src="./asset/Screen Shot 2022-06-03 at 21.31.32.png" alt="" />
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn25" href="#" role="button">Konten yang dimanipulasi</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-warning btn-sm" id="quizbtn25" href="#" role="button">Konten palsu</a></div>
                   <div class="row mt-3 justify-content-center"><a class="btn btn-primary btn-sm" id="quizbtn26" href="#" role="button">Koneksi yang salah</a></div>
-                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn27" href="#" role="button">Konten palsu</a></div>
+                  <div class="row mt-3 justify-content-center"><a class="btn btn-success btn-sm" id="quizbtn28" href="#" role="button">Konten menyesatkan</a></div>
                 </div>
               </div>
             </div>
@@ -467,6 +467,29 @@
         }
       });
       $("#quizbtn26").click(function () {
+        if (poin == 1) {
+          location.href = "./result1.html";
+        } else if (poin == 2) {
+          location.href = "./result2.html";
+        } else if (poin == 3) {
+          location.href = "./result3.html";
+        } else if (poin == 4) {
+          location.href = "./result4.html";
+        } else if (poin == 5) {
+          location.href = "./result5.html";
+        } else if (poin == 6) {
+          location.href = "./result6.html";
+        } else if (poin == 7) {
+          location.href = "./result7.html";
+        } else if (poin == 8) {
+          location.href = "./result8.html";
+        } else if (poin == 9) {
+          location.href = "./result9.html";
+        } else if (poin == 10) {
+          location.href = "./result10.html";
+        }
+      });
+      $("#quizbtn28").click(function () {
         poin++;
         if (poin == 1) {
           location.href = "./result1.html";
